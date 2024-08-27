@@ -35,9 +35,9 @@
         }
       </script>
 </head>
-<body class="font-manrope">
-    <header class=" container mx-auto px-5">
-        <nav class="navbar bg-base-100">
+<body class="font-manrope bg-[#F4F4F4]">
+    <header class=" container mx-auto px-5 mb-20 bg-transparent" id="home">
+        <nav class="navbar">
 
           <a class="btn btn-ghost text-2xl md:text-3xl font-extrabold">
             <i class="fa-solid fa-arrow-right bg-primary -rotate-45 p-1 rounded-full"></i>
@@ -65,7 +65,7 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
+                  <li><a href="#home">Home</a></li>
                 
                   <li><a>Services</a></li>
   
@@ -80,7 +80,7 @@
             </div>
             <div class="mr-60 navbar-center hidden md:flex md:justify-center md:items-center">
               <ul class="menu menu-horizontal px-1">
-                <li><a class="hover:font-extrabold">Home</a></li>
+                <li><a class="hover:font-extrabold" href="#home">Home</a></li>
                 
                 <li><a class="hover:font-extrabold">Services</a></li>
 
@@ -124,8 +124,50 @@
         </div>
     </header>
 
-    <main>
+    <main class="container mx-auto px-5">
+      <section class="my-10 relative">
 
+        <img src="assets/Vector.png" alt="" class="hidden md:absolute -top-16 -left-10">
+
+        <div class="flex justify-between flex-col md:flex-row gap-5">
+          <div class="w-full md:w-3/6">
+
+            <a href="" class="btn font-bold mb-4 flex items-center justify-center w-fit mx-auto md:mx-0">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>About Us</span>
+            </a>
+
+            <h2 class="text-2xl md:text-4xl font-bold lg:font-extrabold max-w-lg mb-5 lg:mb-32 text-center md:text-left">We design thoughtful, liveable spaces</h2>
+
+            <p class="lg:hidden text-center mb-5">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            <div class="p-6 rounded-2xl mb-6 border flex items-center justify-start gap-5 bg-white shadow-xl">
+              <div>
+                <img src="assets/commercial.png" alt="">
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold">Commercial</h3>
+                <p class="max-w-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+
+            <div class="p-6 pb-8 rounded-2xl border flex items-center justify-start gap-5 bg-white shadow-xl">
+              <div>
+                <img src="assets/residential.png" alt="">
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold">Residential</h3>
+                <p class="max-w-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <img src="assets/Rectangle.png" alt="">
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
